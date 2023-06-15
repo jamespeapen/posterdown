@@ -207,7 +207,7 @@ font-size: 20px;
 font-size: 30px;
 }
 .author_extra {
-color: $if(secondary_colour)$$secondary_colour$$else$#008080$endif$;
+color: $if(authorextra_textcol)$$authorextra_textcol$$else$$if(secondary_colour)$$secondary_colour$$else$#0b4545$endif$$endif$;
 margin: 0;
 line-height: 85%;
 font-size: $if(authorextra_textsize)$$authorextra_textsize$$else$35px$endif$;
