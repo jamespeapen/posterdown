@@ -96,7 +96,7 @@ code {
 font-size: 25pt;
 font-family: monospace;
 background-color: $if(secondary_colour)$$secondary_colour$24$else$#00808024$endif$;
-color: $if(secondary_colour)$$secondary_colour$$else$#008080$endif$;
+color: $if(code_color)$$code_color$$else$$if(secondary_colour)$$secondary_colour$$else$#0b4545$endif$$endif$;
 padding: 1.2mm;
 line-height: 1;
 border-radius: 2mm;
