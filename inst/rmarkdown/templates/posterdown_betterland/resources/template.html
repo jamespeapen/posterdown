@@ -307,7 +307,7 @@ text-decoration: none;
 .poster_wrap {
 width: $if(poster_width)$$poster_width$$else$46in$endif$;
 height: $if(poster_height)$$poster_height$$else$32in$endif$;
-padding: 0cm;
+padding: $if(poster_margin)$$poster_margin$$else$2cm$endif$;
 background-color: $if(body_bgcol)$$body_bgcol$$else$#ffffff$endif$;
 }
 span > #tab:mytable {
