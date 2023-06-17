@@ -132,6 +132,11 @@ font-size: $if(caption_textsize)$$caption_textsize$$else$20pt$endif$;
 font-style: italic;
 padding-top: 0;
 }
+
+.caption > code {
+font-size: calc($caption_textsize$ * 0.8);
+}
+
 .references {
 font-size: $if(reference_textsize)$$reference_textsize$$else$20px$endif$;
 line-height: 90%;
